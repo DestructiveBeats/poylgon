@@ -1,0 +1,97 @@
+.section-about-us{
+    background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
+    padding: 25rem 0;
+    margin-top: -20vh;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+
+    @include respond(tab-port) {
+        padding: 15rem 0;
+    }
+}
+
+.section-events > * {
+    -webkit-transform: skewY(7deg);
+    transform: skewY(7deg);
+        border: 0px solid transparent;
+}
+
+.section-events{
+    background-image: linear-gradient(to right bottom, 
+    rgba($color-white, .2), 
+    rgba($color-black, .6)), url(../img/BG_TEXTURE.png);
+    background-size: cover;
+    background-position: center top;
+    padding: 20rem 0; 
+    margin-top: -10rem;
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg); 
+
+    @include respond(tab-port) {
+        padding: 6rem 0;
+    }
+       
+}
+
+.section-floor-plan{
+    background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
+    background-size: cover;
+    background-position: top;
+    padding: 25rem 0 15rem 0;
+    margin-top: -10rem; 
+    background-attachment: fixed;
+
+    @include respond(tab-port) {
+        padding: 18rem 0 5rem;
+    }
+    
+}
+
+.section-newsletter{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)),  url(../img/BG_TEXTURE.png);
+    background-color: $color-black-lighter;
+    padding: 25rem 0;  
+    
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.section-events-2 {
+    background-image: url(../img/BG_TEXTURE.png);
+    padding: 20rem 0;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-attachment: fixed;
+
+    @include respond(tab-port) {
+        padding: 6rem 0;
+    }
+}
+
+.section-media{
+    background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
+
+    padding: 20rem 10rem;
+
+    @include respond(tab-port) {
+        padding: 6rem 0;
+    }
+}
+
+.section-contact-page{
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5)), url(../img/BG_TEXTURE.png);
+    background-color: #1d1d1d;
+    padding: 25rem 0;
+
+    @include respond(tab-port) {
+        padding: 6rem 0;
+    }
+}
+
+
+
+
+
+
+

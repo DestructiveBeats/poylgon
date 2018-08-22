@@ -1,0 +1,11 @@
+.floor-plan{
+    &__image{
+        height: 470px;
+        width: 70%;
+
+        @include respond(tab-port){
+            height: auto;
+            width: 100%;
+        }
+    }
+}

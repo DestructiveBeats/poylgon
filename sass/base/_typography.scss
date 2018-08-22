@@ -1,0 +1,152 @@
+body{
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    /*font-size:16px;*/
+    line-height: 1.7;
+    color:$color-grey-dark;
+    box-sizing:border-box;
+}
+
+.heading-primary{
+    color:white;
+    margin-bottom: 6rem; 
+
+    &--main{
+        font-size: 8rem;
+        display: block;
+        letter-spacing: 4.8rem;
+        font-family:  myFirstFont; 
+        font-weight: 800;   
+        text-transform: uppercase;  
+        animation-name: moveInLeft;  
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+    
+    &--sub{
+        font-size: 1.675rem;
+        display: block;
+        font-family:  myFirstFont; 
+        font-weight: 800;
+        letter-spacing: 1.0rem;
+        text-transform: uppercase;
+        animation-name: moveInRight;  
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+}
+
+.paragraph{
+    text-align: center;
+    color: $color-white;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    @include respond(tab-port) {
+        font-size: 1.5rem;
+        
+    }
+
+    @include respond(phone) {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    
+}
+
+.paragraph-2{
+    text-align: center;
+    color: $color-white;
+    font-family: paragraphfonts;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+}
+
+.heading-secondary{
+    color: $color-white;
+    font-family:  myFirstFont; 
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgb(141, 216, 181) 10%,
+      rgb(197, 183, 236) 39%,
+      rgb(192, 224, 211) 53%,
+      rgb(195, 182, 237) 14%
+    )
+    left 
+    bottom
+     
+    no-repeat; 
+  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+    display: inline-block;
+
+    @include respond(tab-port) {
+        font-size: 1.8rem;
+        letter-spacing: 0.4rem;
+    }
+    
+}
+
+.heading-secondary-footer{
+    color: $color-white;
+    font-family:  myFirstFont; 
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgb(141, 216, 181) 10%,
+      rgb(197, 183, 236) 39%,
+      rgb(192, 224, 211) 53%,
+      rgb(195, 182, 237) 14%
+    )
+    left 
+    bottom
+     
+    no-repeat; 
+  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.dj-heading{
+    text-transform: uppercase;    
+    font-size: 7rem;
+    font-weight: 800;
+    font-family:  myFirstFont;
+    letter-spacing: 2rem;
+    background: /* gradient can be an image */
+    linear-gradient(
+      to left, 
+      rgb(141, 216, 181) 10%,
+      rgb(197, 183, 236) 39%,
+      rgb(192, 224, 211) 53%,
+      rgb(195, 182, 237) 14%
+    )
+    left 
+    bottom
+     
+    no-repeat; 
+  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
+    display: inline-block;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/big_noodle_titling.ttf);
+}
+
+@font-face {
+    font-family: paragraphfonts;
+    src: url(fonts/big_noodle_titling.ttf);
+}
+

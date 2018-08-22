@@ -1,0 +1,61 @@
+.signup{
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(../img/rock.png);
+    height: 40rem;
+    background-size:100%;
+    border-radius: 3px;
+    box-shadow: 0 1.75rem 4rem rgba($color-black,.3);
+
+    @include respond(tab-port){
+        background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.7) 70%, transparent 100%), url(../img/rock.png);
+        
+    }
+
+    &__form{
+        width:50%;
+        padding: 4.6rem;
+
+        @include respond(tab-port){
+            width:100%;
+        }
+    }
+
+    &--tittle{
+        font-size: 6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.75rem;
+        color:$color-white;
+        font-family: myFirstFont;
+    }
+
+    &--tittle-2{
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color:$color-white;
+        margin-bottom: 2rem;
+        letter-spacing: 1.0rem;
+        font-family: myFirstFont;
+
+        @include respond(tab-port){
+            font-size: 2rem;
+        }
+
+    }
+
+    &__signup-2{
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(../img/rock.png);
+    height: 64rem;
+    background-size:100%;
+    border-radius: 3px;
+    box-shadow: 0 1.75rem 4rem rgba($color-black,.3);
+    }
+
+    &__signup-3{
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.6) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(../img/shutterstock_711838591.jpg);
+    height: 64rem;
+    background-size: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.75rem 4rem rgba(0, 0, 0, 0.3);
+    }
+}

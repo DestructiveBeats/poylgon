@@ -1,0 +1,54 @@
+.header {
+    background-image: url(../img/WebsiteBGnoDancer-06.png);
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: (polygon(0 0, 100% 0, 100% 75vh, 0 100%));
+
+    @include respond(tab-port){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: (polygon(0 0, 100% 0, 100% 85vh, 0 100%));
+    }
+    
+    &__logo-box{
+        position: absolute;
+        top:4rem;
+        left:6rem;
+    }
+    
+    &__logo{
+        height:7.0rem;
+    }
+
+    &__logo-2{
+        height:45rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(tab-port) {
+            height:32rem;
+        }
+
+        @include respond(phone) {
+            height:18rem;
+        }
+    }
+
+    &__heading-logo-box{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+
+    &__btn-box{
+        position: absolute;
+        left: 50%;
+        top:60%;
+        transform: translate(-50%,-50%);
+    }
+}
+
