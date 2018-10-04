@@ -1,45 +1,39 @@
 .card {
+
+    // FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
     
-
-    &__side{
-        height: 40rem;
+    &__side {
+        height: 52rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        backface-visibility: hidden;
         -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-        
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-        
-        &--font{
-            
+        &--front {
+            background-color: $color-white;
         }
 
         &--back {
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
+                background-image: linear-gradient(to right bottom, #455268, #455268);
             }
 
-            &-2 {
-                background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
-            }
-
-            &-3 {
-                background-image: linear-gradient(to right bottom, #3c3b3b, $color-black-lighter);
-            }
+            
         }
     }
+  
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
@@ -49,103 +43,113 @@
         transform: rotateY(0);
     }
 
-    &__picture{
-        background-position: top center;
-        height: 40rem;
+
+    // FRONT SIDE STYLING
+    &__picture {
         background-size: cover;
+        height: 23rem;
         background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
         
-        &--1{
-            background-image: url(../img/carl-cox-50.jpg);
-            
+        &--1 {
+            background-image: url(../img/sweat-box-card.jpg);
         }
 
-        &--2{
-            background-image: url(../img/web-Sasha-2-Preview.jpg);
-           
+        &--2 {
+            background-image: url(../img/sparring.jpg);
         }
-
-        &--3{
-            background-image: url(../img/martinezbrothers20076-photographer-greg-swales.jpg);
-           
+        
+        &--3 {
+            background-image: url(../img/hitting-bag.jpg);
         }
     }
 
-    &__cta{
-        position: absolute;
-        top:30%;
-        width:100%;
-
-    }
-
-    @include respond(tab-port) {
-    &__ticket-box{
-       margin-top: 2rem;
-    }
-}
-    &__back-text{
-        font-size: 3.0rem;
-        letter-spacing: 0.9rem;
-        font-weight: 500;
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 300;
         text-transform: uppercase;
-        color: white;
-        font-family:  myFirstFont;
-
-        @include respond(tab-port) {
-           
-        }
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    
     }
 
-    
-    @include respond(tab-port) {
-        .card {
-            height: auto;
-            
-            &__side{
-                height: auto;
-                position: relative;
-                border-radius: 3px;
-        
-                
-        
-                &--back {
-                    transform: rotateY(0);            
+    &__heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary, .85), 
+            rgba($color-primary, .85));
+        }
+
+    }
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child) {
+                    border-bottom: 1px solid $color-grey-light-2;
                 }
             }
-        
-            &:hover &__side--front {
-                transform: rotateY(0);
-            }
-        
-            &__cta{
-                position: relative;
-                top:0;
-                width:100%;
-            }
-        
-            &__ticket-box{
-               
-            }
-        
-            &__back-text{
-                font-size: 3.0rem;
-                letter-spacing: 0.9rem;
-                font-weight: 500;
-                text-transform: uppercase;
-                color: white;
-                font-family:  myFirstFont;
-            }
-
-            &__picture{
-                height: 20rem;
-            }
-    }
-    }
-    
-    @include respond(phone){
-        &:hover &__side--front {
-            transform: rotateY(0);
         }
     }
+
+    // FRONT SIDE STYLING
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    &__class-info{
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        color: $color-white; 
+    }
+
+
+
+
+
+    //@include respond(tab-port) {
+    
 
 }

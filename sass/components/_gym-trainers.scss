@@ -1,0 +1,8 @@
+.trainers{
+    &__image-size-shape{
+        width: 80%;
+        height: auto;
+        -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+}

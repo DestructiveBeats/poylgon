@@ -8,8 +8,8 @@
         height: 7rem;
         width: 7rem; 
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 3.3rem;
+        right: 4rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -17,8 +17,8 @@
         cursor: pointer;
 
         @include respond(tab-port){
-            top: 4rem;
-            right: 4rem;
+            top: 2rem;
+            right: 2rem;
         }
     }
 
@@ -27,15 +27,15 @@
         width: 6rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
-        background-image: radial-gradient($color-black-lighter, $color-teal);
+        top: 4rem;
+        right: 4rem;
+        background-image: radial-gradient($color-black-lighter, $color-white);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
         @include respond(tab-port){
-            top: 4.5rem;
-            right: 4.5rem;
+            top: 2.5rem;
+            right: 2.5rem;
         }
     }
 
@@ -45,7 +45,6 @@
         top: 0;
         left: 0;
         z-index: 1500;
-
         opacity: 0;
         width: 0;
         transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -69,18 +68,22 @@
     &__link{
         &:link,
         &:visited {
-            display: inline-block;
+        display: inline-block;
         font-size: 3rem;
         font-weight: 500;
+        font-family: logofont;
         color: $color-white;
         text-decoration: none;
         text-transform: uppercase;
-        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary 50%);
         background-size: 220%;
         transition: all .4s;
 
-        
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
 
+        
         span {
             margin-right: 1.5rem;
             display: inline-block;

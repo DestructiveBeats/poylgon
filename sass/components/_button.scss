@@ -1,26 +1,41 @@
-.btn{
-    &__polygon-button{
-        height:18rem;
-        margin-top: 12rem;
+.btn{ 
+&:link,
+&:visited{
+    padding: 2rem 3rem;
+    border-radius: 4rem;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
 
-        @include respond(tab-port) {
-            height:12rem;
-            margin-top: 5rem;
-        }
+&:hover{
+    background-color: $color-black;
+    color:$color-primary;
+&:after{
+
+}
+
+}
+
+&:active{
+
+}
+
+    &--white{
+        background-color: $color-primary; 
+        color: $color-white;
+        
     }
 
-    &__polygon-animated{
-        animation-name: moveInRight;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+    &--text{
+        font-weight: 400;
+        font-size: 1.8rem;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
     }
-    
-    &__ticket-button{
-        height:13rem;
 
-        @include respond(tab-port) {
-            height:12rem;
-        }
+    &--antimated{
+
     }
 }
 

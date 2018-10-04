@@ -9,10 +9,12 @@
   "author": "Jonas",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.2.0",
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "node-sass": "^4.5.3"
   },
   "dependencies": {
-    "aos": "^2.3.3"
+    "aos": "^2.3.3",
+    "jquery": "^3.3.1",
+    "react": "^16.4.2"
   }
 }

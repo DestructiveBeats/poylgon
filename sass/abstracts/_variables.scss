@@ -1,8 +1,6 @@
 // COLORS
-$color-primary: #e4c16f;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-$color-primary-teal: #8dd8b5;
+$color-primary: #b5f510;
+$color-primary-2: #455268;
 
 $color-secondary-light: #FF6600;
 $color-secondary-dark: #ff7730;
@@ -18,7 +16,9 @@ $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
 
 $color-white: #fff;
+$color-darker-white: #ffffff;
 $color-black: #000;
+$color-black-2: #212324;
 $color-black-lighter: #1d1d1d;
 $color-grey-dark-4: #3c3b3b;
 
@@ -28,6 +28,6 @@ $default-font-size: 1.6rem;
 
 // GRID
 $grid-width: 114rem;
-$gutter-vertical: 8rem;
+$gutter-vertical: 6rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;

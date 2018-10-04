@@ -1,0 +1,27 @@
+.media-icons{
+    
+    &__box{
+        text-align: center;
+        color: white;
+    }
+
+    .fa-cog{
+        color: $color-primary;
+        text-decoration: none;
+        padding-right: 2rem;
+
+        &:hover{
+            color: #fbc400;
+        }
+    }
+
+    &__location{
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-size: 2.1rem;
+        color: $color-white;
+        text-align: center;
+        font-family: logofont;
+        letter-spacing: 0.5rem;
+    }
+}

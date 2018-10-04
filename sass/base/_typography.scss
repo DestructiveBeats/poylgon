@@ -8,145 +8,153 @@ body{
 }
 
 .heading-primary{
-    color:white;
+    color:$color-white;
     margin-bottom: 6rem; 
 
     &--main{
-        font-size: 8rem;
+        font-size: 3.3125rem;
         display: block;
-        letter-spacing: 4.8rem;
-        font-family:  myFirstFont; 
-        font-weight: 800;   
+        color: $color-primary;
+        font-family: logofont;
+        font-weight: 600;   
         text-transform: uppercase;  
         animation-name: moveInLeft;  
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        transition: all .2s ease-in-out;
+        letter-spacing: 0.8rem;
+
+    &:hover{
+        transform: scale(1.1);
+    }
     }
     
     &--sub{
-        font-size: 1.675rem;
+        white-space: nowrap;
+        font-size: 5.3125rem;
         display: block;
-        font-family:  myFirstFont; 
+        font-family: logofont; 
         font-weight: 800;
-        letter-spacing: 1.0rem;
         text-transform: uppercase;
         animation-name: moveInRight;  
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        transition: all .2s ease-in-out;
+        letter-spacing: 0.8rem;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
-.paragraph{
-    text-align: center;
-    color: $color-white;
-    font-family: sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
+.heading-primary-2{
+    color:$color-white;
+    margin-bottom: 6rem; 
 
-    @include respond(tab-port) {
-        font-size: 1.5rem;
-        
-    }
-
-    @include respond(phone) {
-        font-size: 1.5rem;
-        text-align: left;
-    }
-    
-}
-
-.paragraph-2{
-    text-align: center;
-    color: $color-white;
-    font-family: paragraphfonts;
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 1rem;
-}
-
-.heading-secondary{
-    color: $color-white;
-    font-family:  myFirstFont; 
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.8rem;
-    background: /* gradient can be an image */
-    linear-gradient(
-      to left, 
-      rgb(141, 216, 181) 10%,
-      rgb(197, 183, 236) 39%,
-      rgb(192, 224, 211) 53%,
-      rgb(195, 182, 237) 14%
-    )
-    left 
-    bottom
-     
-    no-repeat; 
-  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
-    display: inline-block;
-
-    @include respond(tab-port) {
-        font-size: 1.8rem;
-        letter-spacing: 0.4rem;
+    &--main{
+        font-size: 4.3125rem;
+        display: block;
+        color: $color-primary;
+        font-family: logofont;
+        font-weight: 600;   
+        text-transform: uppercase;  
+        animation-name: moveInLeft;  
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        transition: all .2s ease-in-out;
+        letter-spacing: 0.8rem;
     }
     
+    &--sub{
+        white-space: nowrap;
+        font-size: 8.3125rem;
+        display: block;
+        color: $color-white;
+        font-family: logofont; 
+        font-weight: 800;
+        text-transform: uppercase;
+        animation-name: moveInRight;  
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        transition: all .2s ease-in-out;
+        letter-spacing: 0.8rem;
+    }
 }
 
-.heading-secondary-footer{
-    color: $color-white;
-    font-family:  myFirstFont; 
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+.main-heading-text{
+    font-size: 4rem;
+    border-bottom: solid 5px $color-primary;
+    display: inline-block;
+    color: $color-white; 
     text-transform: uppercase;
-    letter-spacing: 7px;
-    background: /* gradient can be an image */
-    linear-gradient(
-      to left, 
-      rgb(141, 216, 181) 10%,
-      rgb(197, 183, 236) 39%,
-      rgb(192, 224, 211) 53%,
-      rgb(195, 182, 237) 14%
-    )
-    left 
-    bottom
-     
-    no-repeat; 
-  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
-    display: inline-block;
-    margin-top: 3rem;
+    font-family: logofont;
+    letter-spacing: 0.6rem;
+
 }
 
-.dj-heading{
-    text-transform: uppercase;    
-    font-size: 7rem;
-    font-weight: 800;
-    font-family:  myFirstFont;
-    letter-spacing: 2rem;
-    background: /* gradient can be an image */
-    linear-gradient(
-      to left, 
-      rgb(141, 216, 181) 10%,
-      rgb(197, 183, 236) 39%,
-      rgb(192, 224, 211) 53%,
-      rgb(195, 182, 237) 14%
-    )
-    left 
-    bottom
-     
-    no-repeat; 
-  background-size:100% 3px ;/* if linear-gradient, we need to resize it */
-    display: inline-block;
+.secondery-heading-text{
+    color: $color-primary;
+    font-size: 2.1rem;  
+    text-transform: uppercase;
+    font-family: logofont;
+}
+
+.third-heading-text{
+    color: $color-white;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    font-family: logofont;
+}
+
+.paraghraph{
+    color: $color-white;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-us-text{
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-black; 
+}
+
+.footer-heading-text{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: logofont;
+    color: $color-primary;
+    letter-spacing: 0.6rem;
+}
+
+.footer-heading-sub{
+    text-align: left;
+    text-transform: uppercase;
+    font-family: logofont;
+    color: $color-primary;
+    letter-spacing: 0.6rem;
+}
+
+a{
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover{
+        color: #fbc400;
+    }
+}
+
+.fa-flag:hover {
+    color: #fbc400;
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url(fonts/big_noodle_titling.ttf);
+    font-family: logofont;
+    src: url(fonts/Oswald.otf);
 }
 
 @font-face {
-    font-family: paragraphfonts;
-    src: url(fonts/big_noodle_titling.ttf);
+    font-family: sans;
+    src: url(fonts/Oswald.otf);
 }
 
